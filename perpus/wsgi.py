@@ -2,7 +2,7 @@ import os
 import sys
 
 # Jalankan path ke direktori proyek Anda
-path = '/home/Suryajulianputra/websekolah'
+path = '/home/Suryajulianputra/perpus'
 if path not in sys.path:
     sys.path.append(path)
 
