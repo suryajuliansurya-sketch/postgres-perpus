@@ -30,7 +30,7 @@ class Siswa(models.Model):
     nama = models.CharField(max_length=150)
     kelas = models.CharField(max_length=50)
     nis = models.CharField(max_length=20, unique=True, verbose_name='NIS')
-    #is_active = models.BooleanField(default=True)
+    is_active = models.BooleanField(default=True)
 
     class Meta:
         verbose_name = 'Siswa'
