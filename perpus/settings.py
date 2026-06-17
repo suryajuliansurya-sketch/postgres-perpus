@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-z%f9q0e+e(8p@&cc#(8iqaw!4)64jb_+bc7mk5&jk_er8*#d=!'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["Suryajulianputra.pythonanywhere.com"]
 
 
 # Application definition
@@ -73,16 +73,14 @@ WSGI_APPLICATION = 'perpus.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
-from decouple import config
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': config('perpus_db'),
-        'USER': config('postgres'),
-        'PASSWORD': config('6767'),
-        'HOST': config('localhost'),
-        'PORT': config('5432'),
+        'NAME': 'perpus_db',
+        'USER': 'postgres',
+        'PASSWORD': '6767',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
