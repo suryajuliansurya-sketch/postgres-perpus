@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-z%f9q0e+e(8p@&cc#(8iqaw!4)64jb_+bc7mk5&jk_er8*#d=!
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ["Suryajulianputra.pythonanywhere.com"]
+ALLOWED_HOSTS = ['Suryajulianputra.pythonanywhere.com']
 
 
 # Application definition
@@ -74,15 +74,11 @@ WSGI_APPLICATION = 'perpus.wsgi.application'
 # https://docs.djangoproject.com/en/6.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'perpus_db',
-        'USER': 'postgres',
-        'PASSWORD': '6767',
-        'HOST': 'localhost',
-        'PORT': '5432',
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
     }
-}
 
 
 # Password validation
